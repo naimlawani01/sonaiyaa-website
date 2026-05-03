@@ -145,7 +145,7 @@
   <section>
     <h2>Article 1 — Responsable du traitement</h2>
     <p>Le responsable du traitement des données personnelles collectées via la plateforme Sönaiyaa est la société <strong>Sönaiyaa</strong>, dont le siège social est établi en République de Guinée.</p>
-    <p>Pour toute question relative à vos données, vous pouvez nous contacter via la fonctionnalité "Aide &amp; Support" accessible dans l'application.</p>
+    <p>Pour toute question relative à vos données, vous pouvez nous contacter à l'adresse <a href="mailto:support@sonaiyaa.com" style="color:#FF5A1F;">support@sonaiyaa.com</a> ou via la fonctionnalité "Aide &amp; Support" accessible dans l'application.</p>
   </section>
 
   <section>
@@ -155,8 +155,10 @@
       <li>Numéro de téléphone (identifiant unique de connexion) ;</li>
       <li>Nom complet ;</li>
       <li>Photo de profil ;</li>
-      <li>Pour les Livreurs : pièce d'identité, permis de conduire (documents transmis pour validation du compte).</li>
+      <li>Pour les <strong>Livreurs</strong> : pièce d'identité (CNI ou passeport), document véhicule (permis de conduire ou carte grise), photo de profil — transmis pour validation du compte ;</li>
+      <li>Pour les <strong>Partenaires</strong> : photo de la devanture commerciale — transmise pour validation du compte.</li>
     </ul>
+    <p style="font-size:13px;color:#6B7280;margin-top:8px;">Ces documents sont stockés de manière chiffrée et ne sont accessibles qu'aux administrateurs habilités de Sönaiyaa aux fins exclusives de vérification d'identité.</p>
     <h3>2.2 Données d'activité</h3>
     <ul>
       <li>Historique des commandes créées (Partenaires) ;</li>
@@ -203,7 +205,8 @@
     </ul>
     <h3>4.2 Prestataires techniques</h3>
     <ul>
-      <li><strong>Hébergement</strong> : Railway (serveurs sécurisés) ;</li>
+      <li><strong>Hébergement API</strong> : Railway (serveurs sécurisés) ;</li>
+      <li><strong>Stockage des documents</strong> : Cloudflare R2 — les pièces d'identité et photos sont stockées sur des serveurs Cloudflare avec chiffrement au repos ;</li>
       <li><strong>Notifications push</strong> : Google Firebase ;</li>
       <li><strong>Cartographie</strong> : Google Maps Platform et OpenStreetMap ;</li>
       <li><strong>SMS</strong> : Nimba SMS (provider local Guinée) ;</li>
@@ -220,7 +223,7 @@
       <tr><th>Catégorie de données</th><th>Durée de conservation</th></tr>
       <tr><td>Données de compte actif</td><td>Pendant toute la durée d'utilisation du service</td></tr>
       <tr><td>Historique des transactions et livraisons</td><td>5 ans à compter de la transaction (obligations comptables)</td></tr>
-      <tr><td>Documents d'identité des Livreurs</td><td>Durée de validité du compte + 1 an après fermeture</td></tr>
+      <tr><td>Documents d'identité (Livreurs) et photo de devanture (Partenaires)</td><td>Durée de validité du compte + 1 an après fermeture</td></tr>
       <tr><td>Position GPS en temps réel</td><td>Non persistée — supprimée dès la fin de la mission</td></tr>
       <tr><td>Journaux techniques (logs serveur)</td><td>90 jours glissants</td></tr>
       <tr><td>Données après suppression du compte</td><td>Anonymisation sous 30 jours</td></tr>
