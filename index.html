@@ -3,8 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sönaiyaa — La livraison qui connecte vos commerces</title>
-  <meta name="description" content="Sönaiyaa connecte les commerces locaux à un réseau de livreurs indépendants. Suivi en temps réel, paiement Cash & Mobile Money. Disponible en Guinée.">
+
+  <!-- ─── SEO primaire ─────────────────────────────────── -->
+  <title>Sönaiyaa — Application de livraison à Conakry, Guinée</title>
+  <meta name="description" content="Sönaiyaa connecte les commerces de Conakry à des livreurs indépendants. Suivi GPS en temps réel, paiement Cash ou Mobile Money (Orange Money, MTN MoMo). Téléchargez l'app gratuitement.">
+  <meta name="keywords" content="livraison Conakry, livraison Guinée, application livraison, livreur Conakry, Orange Money livraison, MTN MoMo, Sönaiyaa">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Sönaiyaa">
+  <link rel="canonical" href="https://sonaiyaa.fr/">
+
+  <!-- ─── Open Graph (WhatsApp, Facebook, LinkedIn) ────── -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sonaiyaa.fr/">
+  <meta property="og:title" content="Sönaiyaa — Application de livraison à Conakry">
+  <meta property="og:description" content="Connectez votre commerce à des livreurs vérifiés. Suivi en temps réel, Cash & Mobile Money. Disponible sur App Store et Google Play.">
+  <meta property="og:image" content="https://sonaiyaa.fr/img/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Sönaiyaa">
+  <meta property="og:locale" content="fr_GN">
+
+  <!-- ─── Twitter / X Card ─────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sönaiyaa — Application de livraison à Conakry">
+  <meta name="twitter:description" content="Livraison rapide pour vos commerces à Conakry. Suivi GPS, Mobile Money, livreurs vérifiés.">
+  <meta name="twitter:image" content="https://sonaiyaa.fr/img/og-preview.png">
+
+  <!-- ─── Favicon ───────────────────────────────────────── -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- ─── JSON-LD Structured Data ──────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://sonaiyaa.fr/#organization",
+        "name": "Sönaiyaa",
+        "url": "https://sonaiyaa.fr",
+        "logo": "https://sonaiyaa.fr/img/logo.png",
+        "description": "Plateforme de livraison B2B2C connectant les commerces locaux de Conakry à des livreurs indépendants.",
+        "areaServed": {
+          "@type": "City",
+          "name": "Conakry",
+          "addressCountry": "GN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contact@sonaiyaa.com",
+          "telephone": "+224622000000",
+          "contactType": "customer support",
+          "availableLanguage": "French"
+        }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Sönaiyaa Partenaire",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "BusinessApplication",
+        "description": "Application pour les commerces : créez des livraisons en 30 secondes, suivez vos livreurs en temps réel.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "GNF"
+        }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Sönaiyaa Livreur",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "BusinessApplication",
+        "description": "Application pour les livreurs : recevez des courses, gérez votre wallet et retirez vos gains via Mobile Money.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "GNF"
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -72,7 +154,7 @@
       </div>
       <div class="hero__visual">
         <div class="hero__phone-wrapper">
-          <img src="img/hero-phones.png" alt="Applications Sönaiyaa" class="hero__phones" loading="eager">
+          <img src="img/hero-phones.png" alt="Aperçu de l'application Sönaiyaa sur iPhone et Android" class="hero__phones" loading="eager" width="600" height="520" fetchpriority="high">
         </div>
       </div>
     </div>

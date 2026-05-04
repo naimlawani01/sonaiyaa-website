@@ -1,6 +1,6 @@
-# Sönaiya Site Vitrine
+# Sonaiyaa Site Vitrine
 
-"Marketing" presentation landing page for Sönaiya, focused on acquiring partner businesses and new drivers (incentivizing app downloads).
+"Marketing" presentation landing page for Sonaiyaa, focused on acquiring partner businesses and new drivers (incentivizing app downloads).
 
 ## Tech Stack
 - **Technologies**: HTML5, CSS3, JavaScript.
