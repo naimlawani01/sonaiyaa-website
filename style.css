@@ -70,6 +70,12 @@ img { max-width: 100%; display: block; }
   display: inline-block;
   box-shadow: 0 0 12px var(--accent-glow);
 }
+.nav__logo-img {
+  width: 28px; height: 28px;
+  display: inline-block;
+  filter: drop-shadow(0 0 12px var(--accent-glow));
+}
+.nav__logo-img--light { filter: none; }
 .nav__links {
   display: flex; gap: 32px;
 }
