@@ -76,6 +76,21 @@ img { max-width: 100%; display: block; }
   filter: drop-shadow(0 0 12px var(--accent-glow));
 }
 .nav__logo-img--light { filter: none; }
+
+.nav__logo-full {
+  height: 38px; width: auto;
+  display: block;
+  transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nav.scrolled .nav__logo-full { height: 32px; }
+.footer__brand .nav__logo-full { height: 40px; }
+.nav__logo-full--invert {
+  filter: brightness(0) invert(1);
+}
+@media (max-width: 600px) {
+  .nav__logo-full { height: 32px; }
+  .nav.scrolled .nav__logo-full { height: 28px; }
+}
 .nav__links {
   display: flex; gap: 32px;
 }
