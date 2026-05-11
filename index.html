@@ -100,275 +100,363 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#" class="nav__logo" aria-label="Sönaiyaa">
-        <img class="nav__logo-full" src="/img/branding/logo_full.svg" alt="Sönaiyaa">
+        <img class="nav__logo-full" src="img/branding/logo_full.svg" alt="Sönaiyaa">
       </a>
       <div class="nav__links" id="navLinks">
-        <a href="#features">Fonctionnalités</a>
+        <a href="#features">Stats</a>
         <a href="#how">Comment ça marche</a>
-        <a href="#partners">Partenaires</a>
-        <a href="#drivers">Livreurs</a>
+        <a href="#partners">Pour les commerces</a>
+        <a href="#drivers">Pour les livreurs</a>
       </div>
-      <a href="#download" class="nav__cta">Télécharger</a>
+      <a href="#download" class="nav__cta">
+        Télécharger
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
       <button class="nav__burger" id="burger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ─── HERO ────────────────────────────────────────── -->
+  <!-- ─── HERO — Conakry en mouvement ─────────────────── -->
   <section class="hero">
-    <div class="hero__bg-shapes">
-      <div class="shape shape--1"></div>
-      <div class="shape shape--2"></div>
-      <div class="shape shape--3"></div>
-    </div>
     <div class="hero__inner">
+
+      <!-- Texte gauche -->
       <div class="hero__content">
         <div class="hero__badge">
           <span class="hero__badge-dot"></span>
-          Disponible en Guinée
+          <span id="liveCount">4 livreurs</span> actifs à Conakry
         </div>
         <h1 class="hero__title">
-          Vos livraisons.<br>
-          <span class="hero__title-accent">Simplifiées.</span>
+          Vos colis arrivent.<br>
+          <span class="hero__title-strike">Sans drama.</span><br>
+          <span class="hero__title-strike">Sans appel raté.</span><br>
+          <span class="hero__title-accent">Sans surprise.</span>
         </h1>
         <p class="hero__subtitle">
-          Sönaiyaa connecte vos commerces à un réseau de livreurs indépendants. 
-          Suivi en temps réel, paiement Cash & Mobile Money — votre client ne télécharge rien.
+          Sönaiyaa connecte vos commerces à des livreurs vérifiés, à Conakry. Suivi GPS en direct,
+          paiement Cash &amp; Mobile Money — votre client ne télécharge rien.
         </p>
         <div class="hero__ctas">
-          <a href="#" class="store-btn store-btn--apple" aria-label="Télécharger sur l'App Store">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            <div>
-              <small>Télécharger sur</small>
-              <strong>App Store</strong>
-            </div>
+          <a href="#download" class="hero__cta-primary">
+            Démarrer maintenant
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="#" class="store-btn store-btn--google" aria-label="Télécharger sur Google Play">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3.18 23.76c.17.09.37.14.57.13.19 0 .37-.05.53-.14l11.06-6.21-2.77-2.77L3.18 23.76zM1.57 1.36C1.22 1.7 1 2.22 1 2.87v18.27c0 .65.22 1.17.57 1.51l.08.08 10.24-10.24v-.24L1.65 1.28l-.08.08zM20.16 10.35L17 8.56l-3.06 3.06L17 14.67l3.16-1.78c.9-.51.9-1.34 0-1.85v-.69zM3.18.24L14.57 9.22l2.77-2.77L6.28.24C5.9.01 5.49-.06 5.13.05c-.36.11-.67.34-.88.65l-.07-.07-.06.07L3.18.24z"/></svg>
-            <div>
-              <small>Disponible sur</small>
-              <strong>Google Play</strong>
-            </div>
-          </a>
+          <a href="#how" class="hero__cta-ghost">Comment ça marche</a>
+        </div>
+        <div class="hero__meta">
+          <div class="hero__meta-item">
+            <strong>30 min</strong>
+            <span>Livraison moyenne</span>
+          </div>
+          <div class="hero__meta-divider"></div>
+          <div class="hero__meta-item">
+            <strong>7j/7</strong>
+            <span>De 7h à 22h</span>
+          </div>
+          <div class="hero__meta-divider"></div>
+          <div class="hero__meta-item">
+            <strong>Cash &amp; MoMo</strong>
+            <span>Aucun abonnement</span>
+          </div>
         </div>
       </div>
-      <div class="hero__visual">
-        <div class="hero__phone-wrapper">
-          <img src="img/hero-phones.png" alt="Aperçu de l'application Sönaiyaa sur iPhone et Android" class="hero__phones" loading="eager" width="600" height="520" fetchpriority="high">
+
+      <!-- Carte live droite -->
+      <div class="hero__map" aria-hidden="true">
+        <div class="map__top">
+          <div class="map__live">
+            <span class="map__live-dot"></span>
+            <span>En direct · Conakry</span>
+          </div>
+          <div class="map__compass">N</div>
+        </div>
+
+        <svg class="map__svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="mapTitle">
+          <title id="mapTitle">Carte stylisée de Conakry avec livreurs Sönaiyaa actifs</title>
+
+          <defs>
+            <!-- Grille en arrière-plan -->
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,0,0,0.04)" stroke-width="1"/>
+            </pattern>
+            <!-- Glow orange pour les markers livreurs -->
+            <radialGradient id="livreurGlow">
+              <stop offset="0%" stop-color="#FF5A1F" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#FF5A1F" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Fond grille -->
+          <rect width="1000" height="700" fill="url(#grid)"/>
+
+          <!-- Océan (gauche/sud) -->
+          <path d="M 0 380 Q 80 360 180 380 Q 280 405 380 395 Q 460 388 540 410 L 540 700 L 0 700 Z"
+                fill="#EBF4F8" opacity="0.6"/>
+
+          <!-- Forme stylisée de Conakry (péninsule orientée est-ouest) -->
+          <path class="map__land" d="
+            M 60 360
+            Q 80 310 150 290
+            Q 220 270 290 280
+            Q 360 290 430 285
+            Q 510 280 590 295
+            Q 670 310 750 315
+            Q 820 320 880 340
+            Q 920 360 940 400
+            Q 950 440 920 480
+            Q 870 510 800 510
+            Q 700 510 600 500
+            Q 500 490 400 495
+            Q 300 500 220 490
+            Q 140 480 90 450
+            Q 50 410 60 360 Z"
+            fill="#F8F4EE" stroke="rgba(0,0,0,0.08)" stroke-width="1.5"/>
+
+          <!-- Routes principales (axes) -->
+          <g class="map__roads" fill="none" stroke="rgba(0,0,0,0.10)" stroke-width="1.5" stroke-dasharray="6 6">
+            <path d="M 100 400 Q 300 420 500 405 Q 700 390 880 410"/>
+            <path d="M 200 320 Q 250 380 280 460"/>
+            <path d="M 500 310 Q 510 400 520 490"/>
+            <path d="M 750 320 Q 740 400 730 490"/>
+          </g>
+
+          <!-- Quartiers principaux -->
+          <g class="map__quartiers">
+            <g class="quartier" data-cx="170" data-cy="395">
+              <circle cx="170" cy="395" r="6" fill="#9CA3AF"/>
+              <text x="170" y="425" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="14" font-weight="600" fill="#6B7280">Kaloum</text>
+            </g>
+            <g class="quartier" data-cx="345" data-cy="385">
+              <circle cx="345" cy="385" r="5" fill="#9CA3AF"/>
+              <text x="345" y="365" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="13" font-weight="500" fill="#6B7280">Dixinn</text>
+            </g>
+            <g class="quartier" data-cx="510" data-cy="395">
+              <circle cx="510" cy="395" r="6" fill="#9CA3AF"/>
+              <text x="510" y="425" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="14" font-weight="600" fill="#6B7280">Matam</text>
+            </g>
+            <g class="quartier" data-cx="670" data-cy="380">
+              <circle cx="670" cy="380" r="5" fill="#9CA3AF"/>
+              <text x="670" y="360" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="13" font-weight="500" fill="#6B7280">Hamdallaye</text>
+            </g>
+            <g class="quartier" data-cx="810" data-cy="400">
+              <circle cx="810" cy="400" r="6" fill="#9CA3AF"/>
+              <text x="810" y="430" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="14" font-weight="600" fill="#6B7280">Ratoma</text>
+            </g>
+          </g>
+
+          <!-- Conteneur livreurs (rempli par JS) -->
+          <g class="map__livreurs" id="mapLivreurs"></g>
+        </svg>
+
+        <div class="map__bottom">
+          <div class="map__legend">
+            <span class="map__legend-dot map__legend-dot--livreur"></span> Livreurs Sönaiyaa
+          </div>
+          <div class="map__legend">
+            <span class="map__legend-dot map__legend-dot--quartier"></span> Quartiers
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero__scroll-cue">
-      <div class="hero__scroll-line"></div>
+
     </div>
   </section>
 
 
 
 
-  <!-- ─── FEATURES ────────────────────────────────────── -->
-  <section class="features" id="features">
-    <div class="section__inner">
-      <div class="section__header">
-        <span class="section__tag">Pourquoi Sönaiyaa</span>
-        <h2 class="section__title">Tout ce dont vous avez besoin.<br><span class="text-accent">Rien de superflu.</span></h2>
+  <!-- ─── BIG STATS — pas de cards, juste de la typo ─── -->
+  <section class="bigstats" id="features">
+    <div class="bigstats__inner">
+      <div class="bigstats__row">
+        <div class="bigstat">
+          <div class="bigstat__number">30<span class="bigstat__unit">min</span></div>
+          <p class="bigstat__label">Livraison moyenne à Conakry.</p>
+        </div>
+        <div class="bigstat">
+          <div class="bigstat__number">7<span class="bigstat__unit">j/7</span></div>
+          <p class="bigstat__label">De 7h à 22h. Quand vos clients commandent, on est là.</p>
+        </div>
       </div>
-      <div class="features__grid">
-
-        <div class="feature-card feature-card--highlight">
-          <div class="feature-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          </div>
-          <h3>Suivi en temps réel</h3>
-          <p>Votre client suit sa livraison via un simple lien SMS. Pas d'application à télécharger, pas de friction.</p>
+      <div class="bigstats__row">
+        <div class="bigstat">
+          <div class="bigstat__number">5<span class="bigstat__unit">quartiers</span></div>
+          <p class="bigstat__label">Couverts. Kaloum, Dixinn, Matam, Hamdallaye, Ratoma.</p>
         </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-          </div>
-          <h3>Cash & Mobile Money</h3>
-          <p>Orange Money, MTN MoMo ou espèces — chaque commande, chaque mode de paiement. Vous choisissez.</p>
+        <div class="bigstat">
+          <div class="bigstat__number">100<span class="bigstat__unit">%</span></div>
+          <p class="bigstat__label">Livreurs vérifiés. Identité, véhicule, photo.</p>
         </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <h3>Matching GPS intelligent</h3>
-          <p>Notre algorithme trouve le livreur le plus proche de votre commerce en quelques secondes.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Livraison sécurisée</h3>
-          <p>Code PIN de confirmation à la livraison. Le client confirme, vous avez la preuve.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-          </div>
-          <h3>Tarification transparente</h3>
-          <p>Le prix est calculé automatiquement : distance + type de colis + heure. Pas de négociation, pas de surprise.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <h3>Notifications instantanées</h3>
-          <p>Push notifications à chaque étape. Vous êtes informé dès qu'un livreur accepte, récupère ou livre.</p>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ─── HOW IT WORKS ────────────────────────────────── -->
+  <!-- ─── EDITORIAL — Cash & Mobile Money + Sans installation ─── -->
+  <section class="editorial editorial--alt">
+    <div class="editorial__inner">
+      <div class="editorial__eyebrow">Paiement</div>
+      <h2 class="editorial__title">
+        Cash, <span class="editorial__accent">Orange Money</span>, MTN MoMo. <br>
+        Votre client paie comme il veut.
+      </h2>
+      <p class="editorial__lead">
+        Pas de carte bancaire imposée, pas de friction au moment de la livraison.
+        Le paiement Mobile Money est traité par GeniusPay — c'est sécurisé,
+        instantané, et déjà adopté par la majorité des Guinéens.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS — timeline horizontale sans cards ─── -->
   <section class="how" id="how">
-    <div class="section__inner">
-      <div class="section__header">
-        <span class="section__tag">Simple comme 1-2-3</span>
-        <h2 class="section__title">Comment ça marche</h2>
+    <div class="how__inner">
+      <div class="how__header">
+        <div class="how__eyebrow">Comment ça marche</div>
+        <h2 class="how__title">Trois étapes. <span class="text-accent">Pas une de plus.</span></h2>
       </div>
-      <div class="how__steps">
+      <ol class="how__list">
+        <li class="how__item">
+          <div class="how__num">01</div>
+          <h3 class="how__step-title">Créez la commande.</h3>
+          <p class="how__step-desc">
+            Nom du client, contenu du colis, adresse de livraison.
+            Le prix est calculé automatiquement selon la distance.
+            Vous validez en 30 secondes.
+          </p>
+        </li>
+        <li class="how__item">
+          <div class="how__num">02</div>
+          <h3 class="how__step-title">Un livreur accepte.</h3>
+          <p class="how__step-desc">
+            Notre système matche votre commande avec le livreur le plus
+            proche, en quelques secondes. Le client reçoit un SMS avec
+            un lien de suivi GPS — il ne télécharge rien.
+          </p>
+        </li>
+        <li class="how__item">
+          <div class="how__num">03</div>
+          <h3 class="how__step-title">Livré, confirmé, payé.</h3>
+          <p class="how__step-desc">
+            Le livreur arrive. Le client confirme avec un code PIN à
+            usage unique. Vous recevez la notification, le paiement
+            est encaissé. C'est tout.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-        <div class="how__step">
-          <div class="how__step-number">01</div>
-          <div class="how__step-content">
-            <h3>Créez votre commande</h3>
-            <p>Renseignez le nom du client, le contenu du colis et l'adresse. Le prix se calcule automatiquement.</p>
-          </div>
+  <!-- ─── PARTENAIRES — split éditorial ─── -->
+  <section class="split" id="partners">
+    <div class="split__inner">
+      <div class="split__text">
+        <div class="split__eyebrow">Pour les commerces</div>
+        <h2 class="split__title">
+          Vous avez des clients.<br>
+          <span class="split__line-strike">Pas de livreurs ?</span><br>
+          <span class="text-accent">On s'en occupe.</span>
+        </h2>
+        <p class="split__lead">
+          Restaurants, pharmacies, boutiques, ateliers — arrêtez d'embaucher,
+          de gérer, de courir après les coursiers. Créez une commande,
+          un livreur Sönaiyaa la prend en charge.
+        </p>
+        <ul class="split__bullets">
+          <li>Aucun abonnement — vous payez uniquement à la livraison</li>
+          <li>Le client suit sa commande sans rien installer (SMS + lien)</li>
+          <li>Tableau de bord : historique, statistiques, factures</li>
+          <li>Notifications push à chaque étape</li>
+        </ul>
+        <a href="#download" class="split__cta">
+          Devenir partenaire
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <div class="split__visual split__visual--partner">
+        <!-- Démo flux UX éditorial : 3 lignes texte façon "tweet thread" -->
+        <div class="quote-line quote-line--1">
+          <span class="quote-time">14:32</span>
+          <span class="quote-name">Restaurant Le Balafon</span>
+          <span class="quote-action">vient de créer une commande</span>
         </div>
-
-        <div class="how__step-connector">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        <div class="quote-line quote-line--2">
+          <span class="quote-time">14:33</span>
+          <span class="quote-name">Mamadou D.</span>
+          <span class="quote-action">a accepté la course en 47s</span>
         </div>
-
-        <div class="how__step">
-          <div class="how__step-number">02</div>
-          <div class="how__step-content">
-            <h3>Un livreur accepte</h3>
-            <p>En quelques secondes, un livreur vérifié proche de vous accepte la course. Votre client reçoit un SMS de suivi.</p>
-          </div>
+        <div class="quote-line quote-line--3">
+          <span class="quote-time">14:58</span>
+          <span class="quote-name">Client</span>
+          <span class="quote-action">a confirmé la livraison · 12 500 GNF</span>
         </div>
-
-        <div class="how__step-connector">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-        </div>
-
-        <div class="how__step">
-          <div class="how__step-number">03</div>
-          <div class="how__step-content">
-            <h3>Livré & confirmé</h3>
-            <p>Le livreur livre, le client confirme avec son code PIN. Vous recevez la confirmation instantanément.</p>
-          </div>
-        </div>
-
+        <div class="quote-line-pulse" aria-hidden="true"></div>
       </div>
     </div>
   </section>
 
-  <!-- ─── PARTNERS SECTION ────────────────────────────── -->
-  <section class="audience" id="partners">
-    <div class="section__inner">
-      <div class="audience__grid">
-        <div class="audience__content">
-          <span class="section__tag">Pour les commerces</span>
-          <h2 class="section__title">Vous avez des clients.<br>On s'occupe de la <span class="text-accent">livraison.</span></h2>
-          <p class="audience__desc">Restaurants, pharmacies, boutiques — arrêtez de gérer une flotte de livreurs. Créez une commande en 30 secondes, on trouve le livreur.</p>
-          <ul class="audience__list">
-            <li>
-              <span class="audience__list-icon">✦</span>
-              Aucun abonnement — vous ne payez qu'à la livraison
-            </li>
-            <li>
-              <span class="audience__list-icon">✦</span>
-              Votre client suit sa commande sans rien installer
-            </li>
-            <li>
-              <span class="audience__list-icon">✦</span>
-              Tableau de bord complet : historique, statistiques, gains
-            </li>
-          </ul>
-          <a href="#download" class="btn btn--primary">Devenir partenaire</a>
-        </div>
-        <div class="audience__visual">
-          <div class="audience__card audience__card--1">
-            <div class="audience__card-icon">🍕</div>
-            <div>
-              <strong>Restaurant Le Balafon</strong>
-              <small>12 livraisons aujourd'hui</small>
-            </div>
-          </div>
-          <div class="audience__card audience__card--2">
-            <div class="audience__card-icon">💊</div>
-            <div>
-              <strong>Pharmacie Centrale</strong>
-              <small>Commande en cours…</small>
-            </div>
-          </div>
-          <div class="audience__card audience__card--3">
-            <div class="audience__card-icon">🛍️</div>
-            <div>
-              <strong>Boutique Mamou Style</strong>
-              <small>8 commandes cette semaine</small>
-            </div>
-          </div>
-        </div>
+  <!-- ─── LIVREURS — split éditorial dark ─── -->
+  <section class="split split--dark" id="drivers">
+    <div class="split__inner split__inner--reverse">
+      <div class="split__text">
+        <div class="split__eyebrow split__eyebrow--light">Pour les livreurs</div>
+        <h2 class="split__title split__title--light">
+          Roulez quand vous voulez.<br>
+          Soyez payé <span class="text-accent">vite</span>.
+        </h2>
+        <p class="split__lead split__lead--light">
+          Moto-taxi, scooter, vélo ou voiture — Sönaiyaa transforme votre véhicule
+          en machine à revenus. Vous choisissez vos courses. Vous gardez votre
+          indépendance. Vous touchez vos gains en Mobile Money.
+        </p>
+        <ul class="split__bullets split__bullets--light">
+          <li>Activez le mode En ligne quand vous voulez livrer</li>
+          <li>Vous voyez le prix de la course AVANT de l'accepter</li>
+          <li>Wallet intégré — retrait à partir de 5 000 GNF</li>
+          <li>Orange Money, MTN MoMo, Wave</li>
+        </ul>
+        <a href="#download" class="split__cta split__cta--accent">
+          Devenir livreur
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
       </div>
-    </div>
-  </section>
-
-  <!-- ─── DRIVERS SECTION ─────────────────────────────── -->
-  <section class="audience audience--dark" id="drivers">
-    <div class="section__inner">
-      <div class="audience__grid audience__grid--reverse">
-        <div class="audience__content">
-          <span class="section__tag section__tag--light">Pour les livreurs</span>
-          <h2 class="section__title section__title--light">Roulez. Livrez.<br><span class="text-accent">Gagnez.</span></h2>
-          <p class="audience__desc audience__desc--light">Moto-taxi, cycliste ou chauffeur VTC — complétez vos revenus avec des courses régulières. Vous êtes votre propre patron.</p>
-          <ul class="audience__list audience__list--light">
-            <li>
-              <span class="audience__list-icon">✦</span>
-              Choisissez vos courses — aucune obligation
-            </li>
-            <li>
-              <span class="audience__list-icon">✦</span>
-              Wallet intégré — suivez vos gains en temps réel
-            </li>
-            <li>
-              <span class="audience__list-icon">✦</span>
-              Retirez vos gains via Mobile Money à tout moment
-            </li>
-          </ul>
-          <a href="#download" class="btn btn--accent">Devenir livreur</a>
-        </div>
-        <div class="audience__visual">
-          <div class="wallet-preview">
-            <div class="wallet-preview__header">
-              <span>Mon Wallet</span>
-              <span class="wallet-preview__badge">En ligne</span>
-            </div>
-            <div class="wallet-preview__balance">
-              <small>Solde disponible</small>
-              <div class="wallet-preview__amount">48 500 <span>GNF</span></div>
-            </div>
-            <div class="wallet-preview__stats">
-              <div>
-                <small>Courses aujourd'hui</small>
-                <strong>7</strong>
-              </div>
-              <div>
-                <small>Gains du jour</small>
-                <strong>28 400 GNF</strong>
-              </div>
-            </div>
+      <div class="split__visual split__visual--driver">
+        <!-- Trois "tickets" de gains empilés façon receipts -->
+        <div class="ticket ticket--1">
+          <div class="ticket__top">
+            <span class="ticket__label">Course #1284</span>
+            <span class="ticket__time">Aujourd'hui · 17:12</span>
           </div>
+          <div class="ticket__route">
+            <span class="ticket__from">Madina</span>
+            <span class="ticket__arrow">→</span>
+            <span class="ticket__to">Ratoma</span>
+          </div>
+          <div class="ticket__amount">+ 8 400 GNF</div>
+        </div>
+        <div class="ticket ticket--2">
+          <div class="ticket__top">
+            <span class="ticket__label">Course #1281</span>
+            <span class="ticket__time">Aujourd'hui · 15:48</span>
+          </div>
+          <div class="ticket__route">
+            <span class="ticket__from">Kaloum</span>
+            <span class="ticket__arrow">→</span>
+            <span class="ticket__to">Hamdallaye</span>
+          </div>
+          <div class="ticket__amount">+ 12 600 GNF</div>
+        </div>
+        <div class="ticket ticket--3">
+          <div class="ticket__top">
+            <span class="ticket__label">Course #1276</span>
+            <span class="ticket__time">Aujourd'hui · 13:22</span>
+          </div>
+          <div class="ticket__route">
+            <span class="ticket__from">Dixinn</span>
+            <span class="ticket__arrow">→</span>
+            <span class="ticket__to">Matam</span>
+          </div>
+          <div class="ticket__amount">+ 7 400 GNF</div>
         </div>
       </div>
     </div>
@@ -409,7 +497,7 @@
     <div class="footer__inner">
       <div class="footer__brand">
         <a href="#" class="nav__logo" aria-label="Sönaiyaa">
-          <img class="nav__logo-full nav__logo-full--invert" src="/img/branding/logo_full.svg" alt="Sönaiyaa">
+          <img class="nav__logo-full nav__logo-full--invert" src="img/branding/logo_full.svg" alt="Sönaiyaa">
         </a>
         <p>La livraison qui connecte vos commerces.</p>
       </div>
