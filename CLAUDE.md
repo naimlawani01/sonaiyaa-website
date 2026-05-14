@@ -5,7 +5,17 @@
 ## Status
 - **Live in production** on **Vercel** at `https://sonaiyaa.fr` (and `sonaiyaa.com`). DNS + SSL handled by Vercel.
 - A `Dockerfile` (Nginx) is also kept in this directory for portability (any container host) but Vercel is the production target.
-- The store download CTAs (`href="#"` × 4 in `index.html`) still need real App Store / Google Play URLs once the apps are published.
+
+## Store CTAs — current state
+
+Two apps to download, presented side-by-side in the `#download` section (`.download2`):
+
+| App | App Store | Google Play |
+|---|---|---|
+| **Sönaiyaa Partenaire** | ✅ Live → `https://apps.apple.com/app/id6765756215` | ⏳ Disabled "Bientôt" button |
+| **Sönaiyaa Livreur** | ⏳ Disabled "Bientôt" button | ⏳ Disabled "Bientôt" button |
+
+When new app store URLs become available, swap the `<span class="dlbtn dlbtn--soon">` for `<a href="..." class="dlbtn dlbtn--live" target="_blank" rel="noopener">` in `index.html`.
 
 ## Tech Stack
 - **Technologies**: HTML5, CSS3, JavaScript.
