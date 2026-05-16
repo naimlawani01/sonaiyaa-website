@@ -13,7 +13,7 @@ Two apps to download, presented side-by-side in the `#download` section (`.downl
 | App | App Store | Google Play |
 |---|---|---|
 | **Sönaiyaa Partenaire** | ✅ Live → `https://apps.apple.com/app/id6765756215` | ⏳ Disabled "Bientôt" button |
-| **Sönaiyaa Livreur** | ⏳ Disabled "Bientôt" button | ⏳ Disabled "Bientôt" button |
+| **Sönaiyaa Livreur** | ✅ Live → `https://apps.apple.com/app/id6765755989` | ⏳ Disabled "Bientôt" button |
 
 When new app store URLs become available, swap the `<span class="dlbtn dlbtn--soon">` for `<a href="..." class="dlbtn dlbtn--live" target="_blank" rel="noopener">` in `index.html`.
 
